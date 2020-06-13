@@ -39,12 +39,14 @@ class TestBar extends Component {
                         borderRadius: 10,
                     }}>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                            <Icon name={item.icon} size={45} style={{ padding: 10 }} color={this.props.darkMode == false ? "#212121" : "#EEEEEE"} />
+                            <View style={{ paddingLeft: 15, width: 65 }}>
+                                <Icon name={item.icon} size={45} color={this.props.darkMode == false ? "#0277BD" : "#EEEEEE"} />
+                            </View>
                             <View style={{ flexDirection: 'column' }}>
                                 <Text style={{
-                                    color: this.props.darkMode == false ? "#212121" : "#F5F5F5",
+                                    color: this.props.darkMode == false ? "#0277BD" : "#F5F5F5",
                                     fontWeight: 'bold',
-                                    fontSize: 20,
+                                    fontSize: 18,
                                     padding: 10,
                                     paddingLeft: 20,
                                 }}>{item.name}</Text>
